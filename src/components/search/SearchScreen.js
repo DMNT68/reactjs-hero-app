@@ -40,7 +40,7 @@ export const SearchScreen = ({history}) => {
       <div className="col-7">
         <h4>Results</h4>
         {
-            q === '' && <div className="alert alert-info">Search hero</div>
+            q === '' && <div className="alert alert-info">Search a hero</div>
         }
 
         {

@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchScreen /> debe de mostrar a Batman y el input con el valor del queryString 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4>
+      Searc Form
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="d-grid gap-2"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find your hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <h4>
+      Results
+    </h4>
+    <div
+      className="card ms-3 mb-3"
+      style={
+        Object {
+          "maxWidth": 300,
+        }
+      }
+    >
+      <div
+        className="d-flex justify-content-md-around flex-wrap"
+      >
+        <div
+          style={
+            Object {
+              "width": "40%",
+            }
+          }
+        >
+          <img
+            alt="Batman"
+            className="card-img"
+            src="./assets/heroes/dc-batman.jpg"
+          />
+        </div>
+        <div
+          style={
+            Object {
+              "width": "60%",
+            }
+          }
+        >
+          <div
+            className="card-body"
+          >
+            <h5
+              className="card-title"
+            >
+              Batman
+            </h5>
+            <p
+              className="card-text"
+            >
+              Bruce Wayne
+            </p>
+            <p
+              className="card-text"
+            >
+              <small
+                className="text-muted"
+              >
+                Detective Comics #27
+              </small>
+            </p>
+            <a
+              href="/hero/dc-batman"
+              onClick={[Function]}
+            >
+              Mas...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <SearchScreen /> debe de mostrar un error si no se encuentra el Hero 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4>
+      Searc Form
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="d-grid gap-2"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find your hero"
+          type="text"
+          value="batman123"
+        />
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <h4>
+      Results
+    </h4>
+    <div
+      className="alert alert-danger"
+    >
+      There is not a hero with 
+      batman123
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <SearchScreen /> debe de mostrarse correctamente con valores por defecto 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-5"
+  >
+    <h4>
+      Searc Form
+    </h4>
+    <hr />
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="d-grid gap-2"
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="Find your hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-7"
+  >
+    <h4>
+      Results
+    </h4>
+    <div
+      className="alert alert-info"
+    >
+      Search a hero
+    </div>
+  </div>
+</div>
+`;
